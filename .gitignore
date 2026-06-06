@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+
+# JetBrains IDE
+
+.idea/inkora.iml
+.idea/modules.xml
+.idea/vcs.xml
