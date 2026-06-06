@@ -13,7 +13,7 @@ export default function Home() {
                 className="font-urbanist w-325 mx-auto flex overflow-hidden items-center py-[8rem]">
                 <div className="w-162.5">
                     <h1 className="font-black text-[60px]  leading-tight">Best <span className="text-[#21a4d9]"> Printing Service </span>
-                        <span className="text-[#132353]"> Company in Nepal</span>
+                        <span className="text-[#132353]"> Company in Nepal Also for testing</span>
                     </h1>
                     <p className="my-6 text-[18px]">We make things that look really good like pictures and words and we
                         print them
