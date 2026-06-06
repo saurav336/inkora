@@ -7,11 +7,11 @@ export default function Header() {
         <>
 
             <header className="w-325 mx-auto">
-                <nav className="flex items-center">
+                <nav className="flex justify-between items-center">
                     <Link href="/">
                         <Image src={logo} alt="Inkora" width={150} height={150}/>
                     </Link>
-                    <ul className="flex items-center list-unstyled gap-2 font-urbanist">
+                    <ul className="flex items-center list-unstyled gap-2 font-urbanist text-white">
                         <Link href="/">Home</Link>
                         <Link href="/about">About</Link>
                         <Link href="/blog">Blog</Link>
