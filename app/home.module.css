@@ -1,14 +1,14 @@
 .animate_h1 {
-    animation: fadeInUp .5s ease-in-out;
+    animation: fadeInUp 1s ease-in-out;
 }
 
 .animate_para {
-    animation: fadeInUp .5s ease-in-out .2s;
+    animation: fadeInUp 1s ease-in-out .2s;
     animation-fill-mode: both;
 }
 
 .animate_btn {
-    animation: fadeInUp .5s ease-in-out .4s;
+    animation: fadeInUp 1s ease-in-out .4s;
     animation-fill-mode: both;
 }
 
