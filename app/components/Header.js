@@ -6,7 +6,7 @@ export default function Header() {
     return (
         <>
 
-            <header className="w-325 mx-auto">
+            <header className="w-325 mx-auto hidden lg:block">
                 <nav className="flex justify-between items-center">
                     <Link href="/">
                         <Image src={logo} alt="Inkora" width={150} height={150}/>

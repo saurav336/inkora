@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 // import banner from '@/public/hero_banner.jpeg'
 import style from '@/app/home.module.css'
+import {Suspense} from "react";
 
 export default function Home() {
 
@@ -32,6 +33,15 @@ export default function Home() {
 
                 </div>
             </main>
+
+            <section>
+                <h5 className="text-center uppercase font-urbanist mb-5"><span>// about our company //</span></h5>
+                <h2 className="text-center font-urbanist font-medium text-[40px] leading-tight">Where Creativity Meets
+                     <span className="block text-[#21a4d9] font-bold">Quality Printing</span></h2>
+                <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-8">
+
+                </div>
+            </section>
 
 
         </>
