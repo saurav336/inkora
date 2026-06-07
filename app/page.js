@@ -1,13 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import banner from '@/public/banner.jpeg'
+import banner from '@/public/hero_banner.jpeg'
 
 export default function Home() {
 
     return (
         <>
             <div className="absolute top-0 w-full overflow-hidden z-[-2] bg-cover bg-center bg-no-repeat object-cover">
-                <Image src={banner} alt="banner" className="w-full h-full object-cover "/>
+                <Image src={banner} alt="banner" className="w-full object-cover "/>
             </div>
             <main
                 className="font-urbanist w-325 mx-auto flex overflow-hidden items-center py-[8rem]">
