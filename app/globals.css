@@ -29,3 +29,27 @@ body {
 .header {
     background: var(--color-light-blue);
 }
+
+.icon{
+    width: 48px;
+    height: 48px;
+    background: var(--color-blue);
+    border-radius: 50%;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.line{
+    height: 42px;
+    width: 2px;
+    background: linear-gradient(0deg, transparent, var(--color-accent));
+}
