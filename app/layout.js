@@ -1,12 +1,11 @@
-import {Urbanist} from "next/font/google";
+import {Outfit} from "next/font/google";
 import "./globals.css";
 import Header from "@/app/components/Header";
 
-const urbanist = Urbanist({
-    variable: "--font-urbanist",
+const outfit = Outfit({
+    variable: "--font-outfit",
     subsets: ["latin"],
 });
-
 
 
 export const metadata = {
@@ -21,7 +20,7 @@ export default function RootLayout({children}) {
             lang="en"
 
         >
-        <body className={`${urbanist.variable} h-full antialiased`}>
+        <body className={`${outfit.variable} h-full antialiased`}>
 
         <Header/>
         {children}</body>
