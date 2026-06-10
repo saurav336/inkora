@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-// import banner from '@/public/hero_banner.jpeg'
+import banner from '@/public/banner-1.jpeg'
 import style from '@/app/home.module.css'
 import {Suspense} from "react";
 
@@ -8,9 +8,9 @@ export default function Home() {
 
     return (
         <>
-            {/*<div className="absolute top-0 w-full overflow-hidden z-[-2] bg-cover bg-center bg-no-repeat object-cover">*/}
-            {/*    <Image src={banner} alt="banner" className="w-full object-cover "/>*/}
-            {/*</div>*/}
+            <div className="absolute top-0 w-full overflow-hidden z-[-2] bg-cover bg-center bg-no-repeat object-cover">
+                <Image src={banner} alt="banner" className="w-full object-cover "/>
+            </div>
             <main
                 className="flex overflow-hidden justify-center items-center py-[8rem]">
                 <div>
@@ -19,9 +19,9 @@ export default function Home() {
                         <span className="block">in Nepal</span>
                     </h1>
                     <div className="w-150 flex flex-col mx-auto">
-                        <p className={`font-outfit my-6 text-[18px] ${style.animate_para} text-center`}>Professional
-                            graphic design
-                            and printing solutions for businesses, organizations, and individuals.
+                        <p className={`font-outfit my-6 text-[18px] ${style.animate_para} text-center`}>
+                            Bring your ideas to life with premium quality printing services designed to make your brand stand out.
+
                         </p>
                         <Link href="/contact"
                               className={`bg-[#132353] text-white self-center p-3 rounded-full hover:bg-[#21a4d9] ease-in-out duration-500 ${style.animate_btn}`}>Get
@@ -61,8 +61,7 @@ export default function Home() {
                             <h2 className="font-outfit font-medium text-[40px] leading-tight">Where Creativity
                                 Meets
                                 <span className="block text-[#21a4d9] font-bold underline decoration-1 underline-offset-10">Quality Printing</span></h2>
-                            <p className="font-outfit text-[18px] mt-3">We combine artistic vision with premium printing techniques to deliver custom products
-                                exceed expectations.
+                            <p className="font-outfit text-[18px] mt-3">We specialize in high-resolution prints with sharp colors, fine detailing, and long-lasting quality that speaks for itself.
 
                             </p>
 
