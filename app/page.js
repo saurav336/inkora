@@ -3,6 +3,7 @@ import Link from "next/link";
 import banner from '@/public/banner-1.jpeg'
 import style from '@/app/home.module.css'
 import {Suspense} from "react";
+import MarqueeTicker from "@/app/components/MarqueeTicker";
 
 export default function Home() {
 
@@ -20,7 +21,8 @@ export default function Home() {
                     </h1>
                     <div className="w-150 flex flex-col mx-auto">
                         <p className={`font-outfit my-6 text-[18px] ${style.animate_para} text-center`}>
-                            Bring your ideas to life with premium quality printing services designed to make your brand stand out.
+                            Bring your ideas to life with premium quality printing services designed to make your brand
+                            stand out.
 
                         </p>
                         <Link href="/contact"
@@ -56,14 +58,16 @@ export default function Home() {
                     </div>
                     <div>
 
-                            <h5 className="uppercase font-outfit mb-5"><span className="text-[#172e64]">// about our company //</span>
-                            </h5>
-                            <h2 className="font-outfit font-medium text-[40px] leading-tight">Where Creativity
-                                Meets
-                                <span className="block text-[#21a4d9] font-bold underline decoration-1 underline-offset-10">Quality Printing</span></h2>
-                            <p className="font-outfit text-[18px] mt-3">We specialize in high-resolution prints with sharp colors, fine detailing, and long-lasting quality that speaks for itself.
+                        <h5 className="uppercase font-outfit mb-5"><span className="text-[#172e64]">// about our company //</span>
+                        </h5>
+                        <h2 className="font-outfit font-medium text-[40px] leading-tight">Where Creativity
+                            Meets
+                            <span className="block text-[#21a4d9] font-bold underline decoration-1 underline-offset-10">Quality Printing</span>
+                        </h2>
+                        <p className="font-outfit text-[18px] mt-3">We specialize in high-resolution prints with sharp
+                            colors, fine detailing, and long-lasting quality that speaks for itself.
 
-                            </p>
+                        </p>
 
                         <div>
                             <div className="flex gap-10 mt-8.75">
@@ -81,7 +85,8 @@ export default function Home() {
                                 <div className="content">
                                     <h4 className="mb-2 text-[24px] font-outfit">Live Order Tracking</h4>
 
-                                    <p className="pn-p-1 disc font-outfit">Everyone’s local printer, we partner with more than 50
+                                    <p className="pn-p-1 disc font-outfit">Everyone’s local printer, we partner with
+                                        more than 50
                                         print on demand suppliers in over 10</p>
                                 </div>
                             </div>
@@ -100,7 +105,8 @@ export default function Home() {
                                 <div className="content">
                                     <h4 className="mb-2 text-[24px] font-outfit">Secure Online Payment</h4>
 
-                                    <p className="pn-p-1 disc font-outfit">Our platform ensures transparent draws, using secure
+                                    <p className="pn-p-1 disc font-outfit">Our platform ensures transparent draws, using
+                                        secure
                                         verifiable procedures, ensuring absolute fairness.
 
                                     </p>
@@ -122,7 +128,8 @@ export default function Home() {
                                     <h4 className="mb-2 text-[24px] font-outfit">Free Design Templates
                                     </h4>
 
-                                    <p className="pn-p-1 disc font-outfit">Safely buy lottery tickets with confidence using our
+                                    <p className="pn-p-1 disc font-outfit">Safely buy lottery tickets with confidence
+                                        using our
                                         secure system, ensuring worry-free
 
                                     </p>
@@ -134,7 +141,7 @@ export default function Home() {
 
                 </div>
             </section>
-
+            <MarqueeTicker/>
 
         </>
     );
