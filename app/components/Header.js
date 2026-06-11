@@ -11,12 +11,15 @@ export default function Header() {
                     <Link href="/">
                         <Image src={logo} alt="Inkora" width={150} height={150}/>
                     </Link>
-                    <ul className="flex items-center list-unstyled gap-2 font-outfit text-[18px] text-black">
+                    <ul className="flex items-center list-unstyled gap-10 font-inter text-[13px] text-white">
                         <Link href="/">Home</Link>
                         <Link href="/about">About</Link>
                         <Link href="/blog">Blog</Link>
                         <Link href="/services">Services</Link>
                     </ul>
+                    <div className="start__porject text-white font-inter text-[13px]">
+                        <Link href="/contact" className="border border-[#feceff] py-2.75 px-5.5 rounded-full inline-flex ">Start Project</Link>
+                    </div>
                 </nav>
             </header>
         </>

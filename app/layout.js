@@ -1,12 +1,16 @@
-import {Outfit} from "next/font/google";
+import {Syne} from "next/font/google";
+import {Inter} from "next/font/google";
 import "./globals.css";
 import Header from "@/app/components/Header";
 
-const outfit = Outfit({
-    variable: "--font-outfit",
+const syne = Syne({
+    variable: "--font-syne",
     subsets: ["latin"],
 });
-
+const inter = Inter({
+    variable: "--font-inter",
+    subsets: ["latin"]
+})
 
 export const metadata = {
     title: "Top Rated Printing Company in Nepal",
@@ -20,7 +24,7 @@ export default function RootLayout({children}) {
             lang="en"
 
         >
-        <body className={`${outfit.variable} h-full antialiased`}>
+        <body className={`${syne.variable} ${inter.variable} h-full antialiased`}>
 
         <Header/>
         {children}</body>

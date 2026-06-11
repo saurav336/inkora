@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-    --background: #ffffff;
+    --background: #000000;
     --foreground: #171717;
     --color-blue: #172e64;
     --color-light-blue: #21a4d9;
@@ -11,7 +11,8 @@
 @theme inline {
     --color-background: var(--background);
     --color-foreground: var(--foreground);
-    --font-outfit: var(--font-outfit);
+    --font-syne: var(--font-syne);
+    --font-inter: var(--font-inter);
     --color-blue: #172e64;
 }
 
@@ -23,14 +24,14 @@
 }
 
 body {
-
+    background: var(--background);
 }
 
 .header {
     background: var(--color-light-blue);
 }
 
-.icon{
+.icon {
     width: 48px;
     height: 48px;
     background: var(--color-blue);
@@ -41,15 +42,24 @@ body {
     justify-content: center;
 }
 
-.left{
+.left {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 8px;
 }
 
-.line{
+.line {
     height: 42px;
     width: 2px;
     background: linear-gradient(0deg, transparent, var(--color-accent));
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(rgba(255, 255, 255, .025) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, .025) 1px, transparent 1px);
+    background-size: 80px 80px;
+    mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+
 }

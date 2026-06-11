@@ -9,48 +9,40 @@ export default function Home() {
 
     return (
         <>
-            <div className="absolute top-0 w-full overflow-hidden z-[-2] bg-cover bg-center bg-no-repeat object-cover">
-                <Image src={banner} alt="banner" className="w-full object-cover "/>
-            </div>
-            <main
-                className="flex overflow-hidden justify-center items-center py-[8rem]">
-                <div>
-                    <h1 className={`font-outfit font-black text-[60px] text-center leading-tight ${style.animate_h1}`}>Top-Rated <span
-                        className="text-[#21a4d9] underline decoration-1 underline-offset-10"> Printing Company </span>
-                        <span className="block">in Nepal</span>
-                    </h1>
-                    <div className="w-150 flex flex-col mx-auto">
-                        <p className={`font-outfit my-6 text-[18px] ${style.animate_para} text-center`}>
-                            Bring your ideas to life with premium quality printing services designed to make your brand
-                            stand out.
+            {/*<div className="absolute top-0 w-full overflow-hidden z-[-2] bg-cover bg-center bg-no-repeat object-cover">*/}
+            {/*    <Image src={banner} alt="banner" className="w-full object-cover "/>*/}
+            {/*</div>*/}
+            <section className="relative min-h-screen p-[140px_5vw_80px] overflow-hidden">
+                <div className="absolute hero-bg"></div>
 
-                        </p>
-                        <Link href="/contact"
-                              className={`bg-[#132353] text-white self-center p-3 rounded-full hover:bg-[#21a4d9] ease-in-out duration-500 ${style.animate_btn}`}>Get
-                            Started</Link>
+                <main
+                    className="w-325 mx-auto flex overflow-hidden items-center">
+                    <div>
+                        <h1 className={`font-syne font-bold ${style.animate_h1}`}>
+                         <span
+                             className="text-white leading-[.95] text-[128px] tracking-[-5.12px]">Printing. Branding.  </span>
+                            <span className="text-white text-[128px] leading-[.95] tracking-[-5.12px]">Design. Done </span>
+                            <span className="text-[128px] italic leading-[.95] text-[#21a4d9] tracking-[-5.12px]">Exceptionally </span>
+                        </h1>
+                        <div className="flex flex-col w-125 text-white">
+                            <p className={`font-inter font- my-6 text-[18px] ${style.animate_para}`}>
+                                From bold brand identities to flawless large-format printing — Inkora is the end-to-end
+                                creative partner for ambitious companies across Nepal and beyond.
+
+                            </p>
+                            <Link href="/contact"
+                                  className={`bg-[#132353] text-white self-start p-3 rounded-full hover:bg-[#21a4d9] ease-in-out duration-500 ${style.animate_btn}`}>Get
+                                Started</Link>
+                        </div>
                     </div>
-                </div>
-                <div>
+                    <div>
 
-                </div>
-            </main>
-            <div>
-                <div className="text-center text-[24px] py-[6rem]">
-                    <div className="font-medium font-outfit mb-16"> Trusted by over 50+ brands</div>
-                    <div className="flex gap-14 flex-col sm:flex-row justify-center items-center w-325 mx-auto">
-                        <Image src="/p1-img-1.webp" width={200} height={200} alt="client"/>
-                        <Image src="/p1-img-2.webp" width={200} height={200} alt="client"/>
-                        <Image src="/p1-img-3.webp" width={200} height={200} alt="client"/>
-                        <Image src="/p1-img-4.webp" width={200} height={200} alt="client"/>
-                        <Image src="/p1-img-5.webp" width={200} height={200} alt="client"/>
                     </div>
-                </div>
-                <div className="w-150 mx-auto">
-
-                </div>
+                </main>
+            </section>
 
 
-            </div>
+
             <section className="bg-[#f6f9ff] py-32">
                 <div className="w-325 mx-auto grid grid-cols-[1.25fr_1fr] gap-27.5">
                     <div>
@@ -141,6 +133,8 @@ export default function Home() {
 
                 </div>
             </section>
+
+
             <MarqueeTicker/>
 
         </>
