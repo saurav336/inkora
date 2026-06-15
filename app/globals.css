@@ -63,3 +63,39 @@ body {
     mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
 
 }
+
+.services {
+    padding: 50px 36px;
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    position: relative;
+    overflow: hidden;
+    transition: background .4s ease;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.services__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-left: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.service-icon {
+    width: 54px;
+    height: 54px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, rgba(93, 184, 240, .15), rgba(27, 42, 94, .3));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: #5DB8F0;
+    margin: 30px 0 28px;
+    border: 1px solid rgba(93, 184, 240, .18);
+    transition: transform .4s;
+}
