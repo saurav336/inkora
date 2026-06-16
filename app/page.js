@@ -6,17 +6,15 @@ import {Suspense} from "react";
 import MarqueeTicker from "@/app/components/MarqueeTicker";
 import Services from "@/app/components/Services"
 import {FaFingerprint} from "react-icons/fa";
-import { FaPenNib } from "react-icons/fa";
-import { FaPrint } from "react-icons/fa";
-import { FaBoxOpen } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaBuilding } from "react-icons/fa6";
-import { FaRegFlag } from "react-icons/fa";
-import { FaBullhorn } from "react-icons/fa6";
+import {FaPenNib} from "react-icons/fa";
+import {FaPrint} from "react-icons/fa";
+import {FaBoxOpen} from "react-icons/fa";
+import {FaInstagram} from "react-icons/fa";
+import {FaBuilding} from "react-icons/fa6";
+import {FaRegFlag} from "react-icons/fa";
+import {FaBullhorn} from "react-icons/fa6";
 
-
-
-
+export const revalidate = 30;
 export default function Home() {
 
     return (
@@ -56,13 +54,14 @@ export default function Home() {
             </section>
 
 
-            <div className="services__grid max-w-[1300px] mx-auto ">
+            <div className="services__grid max-w-[1300px] mx-auto mb-[10rem]">
                 <Services num="01" brandName="Brand Identity"
                           desc="Logos, marks, and visual systems engineered to last decades." icons={<FaFingerprint/>}/>
                 <Services num="02" brandName="Graphic Design"
                           desc="Editorial, layouts, posters — design that commands attention." icons={<FaPenNib/>}/>
                 <Services num="03" brandName="Printing Solutions"
-                          desc="Premium offset & digital printing with uncompromising color accuracy." icons={<FaPrint/>}/>
+                          desc="Premium offset & digital printing with uncompromising color accuracy."
+                          icons={<FaPrint/>}/>
                 <Services num="04" brandName="Packaging Design"
                           desc="Shelf-ready structural & graphic packaging that sells." icons={<FaBoxOpen/>}/>
                 <Services num="05" brandName="Social Media Design"
@@ -75,7 +74,23 @@ export default function Home() {
                           desc="Brochures, decks, catalogs — every touchpoint, perfected." icons={<FaBullhorn/>}/>
 
             </div>
+            <section className="portfolio" id="work">
+                <div className="w-325 mx-auto text-white">
+                    <div className="section-head reveal in flex justify-between items-center gap-[40px]">
+                        <div>
+                            <div className="section-tag uppercase font-inter text-[#21a4d9] text-[12px] tracking-[.2em] flex items-center gap-[12px] mb-[20px]">Featured Work</div>
+                            <h2 className="section-title font-syne font-bold leading-[1.05]">Selected projects, <span className="accent text-[#21a4d9] font-medium italic">crafted with intent.</span>
+                            </h2>
+                        </div>
+                        <p className="section-desc max-w-[420px] text-[16px] font-inter text-[#9aa0a6] leading-[1.7]">A curated look at the brands, products, and campaigns we've helped
+                            bring to life — across Nepal and globally.</p>
+                    </div>
 
+
+
+
+                </div>
+            </section>
             <MarqueeTicker/>
 
         </>
