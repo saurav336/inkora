@@ -1,36 +1,34 @@
 const items = [
-  "Wear Your Brand",
-  "Graphic Tees",
-  "Brand T-Shirts",
-  "Scaling",
-  "Trendy",
-  "Custom Merch",
-  "Bold Prints",
-  "Street Style",
+    "Customize print",
+    "Web developer",
+    "Seo and scaling",
+    "Graphic",
+    "Branding & advertising",
+
 ];
 
 function createTrackHTML(reverse = false) {
-  const repeated = [...items, ...items, ...items];
-  const spans = repeated
-    .map(
-      (item) =>
-        `<span>${item}<span style="opacity:0.6; margin: 0 12px">/</span></span>`
-    )
-    .join("");
+    const repeated = [...items, ...items, ...items];
+    const spans = repeated
+        .map(
+            (item) =>
+                `<span>${item}<span style="opacity:0.6; margin: 0 12px">/</span></span>`
+        )
+        .join("");
 
-  const animationStyle = reverse
-    ? "animation: marquee-ltr 30s linear infinite;"
-    : "animation: marquee-rtl 26s linear infinite;";
+    const animationStyle = reverse
+        ? "animation: marquee-ltr 30s linear infinite;"
+        : "animation: marquee-rtl 26s linear infinite;";
 
-  return `<div style="${animationStyle} display:flex; white-space:nowrap;">${spans}</div>`;
+    return `<div style="${animationStyle} display:flex; white-space:nowrap;">${spans}</div>`;
 }
 
 export function initMarqueeTicker(containerId) {
-  const container = document.getElementById(containerId);
-  if (!container) return;
+    const container = document.getElementById(containerId);
+    if (!container) return;
 
-  const style = document.createElement("style");
-  style.textContent = `
+    const style = document.createElement("style");
+    style.textContent = `
     @keyframes marquee-rtl {
       0%   { transform: translateX(0); }
       100% { transform: translateX(-33.333%); }
@@ -48,33 +46,33 @@ export function initMarqueeTicker(containerId) {
       font-family: 'Inter', sans-serif;
     }
   `;
-  document.head.appendChild(style);
+    document.head.appendChild(style);
 
-  container.style.cssText =
-    "width:100%; overflow:hidden; padding:32px 0; position:relative;";
+    container.style.cssText =
+        "width:100%; overflow:hidden; padding:32px 0; position:relative;";
 
-  const topStrip = document.createElement("div");
-  topStrip.style.cssText = `
+    const topStrip = document.createElement("div");
+    topStrip.style.cssText = `
     overflow: hidden;
     padding: 10px 0;
     background: linear-gradient(to right, #172e64, #172e64);
     transform: rotate(-2deg) scaleX(1.08);
     margin-bottom: -14px;
   `;
-  topStrip.innerHTML = createTrackHTML(false);
+    topStrip.innerHTML = createTrackHTML(false);
 
-  const bottomStrip = document.createElement("div");
-  bottomStrip.style.cssText = `
+    const bottomStrip = document.createElement("div");
+    bottomStrip.style.cssText = `
     overflow: hidden;
     padding: 10px 0;
     background: linear-gradient(to right, #21a4d9, #21a4d9);
     transform: rotate(-2deg) scaleX(1.08);
     margin-top: -14px;
   `;
-  bottomStrip.innerHTML = createTrackHTML(true);
+    bottomStrip.innerHTML = createTrackHTML(true);
 
-  container.appendChild(topStrip);
-  container.appendChild(bottomStrip);
+    container.appendChild(topStrip);
+    container.appendChild(bottomStrip);
 }
 
 
