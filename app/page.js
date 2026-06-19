@@ -53,7 +53,26 @@ export default function Home() {
                 </main>
             </section>
 
+            <section className="services__sec" id="work">
+                <div className="w-325 mx-auto text-white">
+                    <div className="section-head reveal in flex justify-between items-center gap-[40px]">
+                        <div>
+                            <div
+                                className="section-tag uppercase font-inter text-[#21a4d9] text-[12px] tracking-[.2em] flex items-center gap-[12px] mb-[20px]">Featured
+                                Work
+                            </div>
+                            <h2 className="section-title font-syne font-bold leading-[1.05]">A full-stack creative<span className="accent text-[#21a4d9] font-medium italic"> partner</span>
+                            </h2>
+                        </div>
+                        <p className="section-desc max-w-[420px] text-[16px] font-inter text-[#9aa0a6] leading-[1.7]">A
+                            Eight specialized disciplines, one unified vision. We bring strategic thinking and craft together to deliver every layer of your brand.
 
+                        </p>
+                    </div>
+
+
+                </div>
+            </section>
             <div className="services__grid max-w-[1300px] mx-auto mb-[10rem]">
                 <Services num="01" brandName="Brand Identity"
                           desc="Logos, marks, and visual systems engineered to last decades." icons={<FaFingerprint/>}/>
@@ -74,19 +93,22 @@ export default function Home() {
                           desc="Brochures, decks, catalogs — every touchpoint, perfected." icons={<FaBullhorn/>}/>
 
             </div>
-            <section className="portfolio" id="work">
+            <section className="portfolio bg-[#121212]" id="work">
                 <div className="w-325 mx-auto text-white">
                     <div className="section-head reveal in flex justify-between items-center gap-[40px]">
                         <div>
-                            <div className="section-tag uppercase font-inter text-[#21a4d9] text-[12px] tracking-[.2em] flex items-center gap-[12px] mb-[20px]">Featured Work</div>
-                            <h2 className="section-title font-syne font-bold leading-[1.05]">Selected projects, <span className="accent text-[#21a4d9] font-medium italic">crafted with intent.</span>
+                            <div
+                                className="section-tag uppercase font-inter text-[#21a4d9] text-[12px] tracking-[.2em] flex items-center gap-[12px] mb-[20px]">Featured
+                                Work
+                            </div>
+                            <h2 className="section-title font-syne font-bold leading-[1.05]">Selected projects, <span
+                                className="accent text-[#21a4d9] font-medium italic">crafted with intent.</span>
                             </h2>
                         </div>
-                        <p className="section-desc max-w-[420px] text-[16px] font-inter text-[#9aa0a6] leading-[1.7]">A curated look at the brands, products, and campaigns we've helped
+                        <p className="section-desc max-w-[420px] text-[16px] font-inter text-[#9aa0a6] leading-[1.7]">A
+                            curated look at the brands, products, and campaigns we've helped
                             bring to life — across Nepal and globally.</p>
                     </div>
-
-
 
 
                 </div>

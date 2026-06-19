@@ -77,6 +77,9 @@ body {
     justify-content: space-between;
 }
 
+.services__sec{
+    margin-bottom: 4rem;
+}
 .services__grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -114,4 +117,8 @@ body {
     width: 24px;
     height: 1px;
     background: #21a4d9;
+}
+
+.portfolio{
+    padding: 140px 5vw;
 }

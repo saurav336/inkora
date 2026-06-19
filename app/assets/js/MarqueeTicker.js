@@ -57,7 +57,7 @@ export function initMarqueeTicker(containerId) {
   topStrip.style.cssText = `
     overflow: hidden;
     padding: 10px 0;
-    background: linear-gradient(to right, #f72585, #f77f00);
+    background: linear-gradient(to right, #172e64, #172e64);
     transform: rotate(-2deg) scaleX(1.08);
     margin-bottom: -14px;
   `;
@@ -67,7 +67,7 @@ export function initMarqueeTicker(containerId) {
   bottomStrip.style.cssText = `
     overflow: hidden;
     padding: 10px 0;
-    background: linear-gradient(to right, #7b2ff7, #06d6a0);
+    background: linear-gradient(to right, #21a4d9, #21a4d9);
     transform: rotate(-2deg) scaleX(1.08);
     margin-top: -14px;
   `;
