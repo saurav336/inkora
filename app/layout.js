@@ -2,6 +2,7 @@ import {Syne} from "next/font/google";
 import {Inter} from "next/font/google";
 import "./globals.css";
 import Header from "@/app/components/Header";
+import CustomCursor from "@/app/components/Cursor";
 
 const syne = Syne({
     variable: "--font-syne",
@@ -25,7 +26,7 @@ export default function RootLayout({children}) {
 
         >
         <body className={`${syne.variable} ${inter.variable} h-full antialiased`}>
-
+        <CustomCursor/>
         <Header/>
         {children}</body>
         </html>

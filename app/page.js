@@ -58,8 +58,7 @@ export default function Home() {
                     <div className="section-head reveal in flex justify-between items-center gap-[40px]">
                         <div>
                             <div
-                                className="section-tag uppercase font-inter text-[#21a4d9] text-[12px] tracking-[.2em] flex items-center gap-[12px] mb-[20px]">Featured
-                                Work
+                                className="section-tag uppercase font-inter text-[#21a4d9] text-[12px] tracking-[.2em] flex items-center gap-[12px] mb-[20px]">Our Services
                             </div>
                             <h2 className="section-title font-syne font-bold leading-[1.05]">A full-stack creative<span className="accent text-[#21a4d9] font-medium italic"> partner</span>
                             </h2>

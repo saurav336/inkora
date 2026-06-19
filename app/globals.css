@@ -122,3 +122,49 @@ body {
 .portfolio{
     padding: 140px 5vw;
 }
+
+/* cursor */
+
+
+* {
+    cursor: none !important;
+}
+
+.custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1.5px solid #4da6ff;
+    background: transparent;
+    box-shadow: 0 0 8px rgba(77, 166, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    z-index: 9999;
+    transition: width 0.2s ease, height 0.2s ease, opacity 0.2s ease;
+    will-change: transform;
+}
+
+.cursor-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #4da6ff;
+    box-shadow: 0 0 6px rgba(77, 166, 255, 0.8);
+}
+
+/* on hover over links/buttons, ring expands and fades, like a focus ripple */
+.custom-cursor.is-hovering {
+    width: 50px;
+    height: 50px;
+    border-color: rgba(77, 166, 255, 0.6);
+}
+
+.custom-cursor.is-clicking {
+    width: 28px;
+    height: 28px;
+}
