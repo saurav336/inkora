@@ -14,6 +14,7 @@ import {FaBuilding} from "react-icons/fa6";
 import {FaRegFlag} from "react-icons/fa";
 import {FaBullhorn} from "react-icons/fa6";
 import ProjectGallery from "@/app/components/ProjectGallery";
+import WhyUsSection from "@/app/components/WhyUsSection";
 
 export const revalidate = 30;
 export default function Home() {
@@ -117,6 +118,7 @@ export default function Home() {
             </section>
             <div className="w-325 mx-auto">
                 <ProjectGallery/>
+                <WhyUsSection/>
 
             </div>
         </>
